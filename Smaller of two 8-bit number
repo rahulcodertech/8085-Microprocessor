@@ -1,0 +1,10 @@
+MVI A, 45H      
+MVI B, 25H      
+CMP B
+JC B_SMALLER    
+; A is smaller (or equal)
+HLT
+B_SMALLER:
+; B is smaller
+MOV A, B
+HLT
